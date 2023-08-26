@@ -1,0 +1,47 @@
+
+https://chat.openai.com/share/f0772c0f-89ae-4bbe-b5ce-19574719ff16
+
+whether its time series data
+
+which ml algorithm to run. 
+
+
+
+
+1. what is time series data for python, when we do time series analysis
+
+
+
+
+
+
+2. In the data file, each row includes sensor data (10 seconds * 100Hz) + ID + Time + H + R + S + D,
+which may be visualized with the command "./view_data.py xxx.npy 6". H, R, S and D are
+heartrate, respiratory rate, systolic and diastolic blood pressure. Here 10 seconds * 100Hz
+means that each row contains 10 seconds data and the data sampling rate is 100Hz (e.g., 100
+data points per second)
+Is this is time series data?
+
+
+3. Write sensor data analytics program using neural networks and tensor flow to build the relationship model between the sensor data and the parameters (S, D), and predict S and D from future sensor data. The goal is to achieve a low MAE (less than 3
+ideally) for two parameters (S, D) on the test data
+
+
+4. The data has 10000 rows and 1006 columns. 1000 columns shows input (1000 points in 10 seconds from sensor) 6 columns are the output. data is in this form. Explain this data to me in detail, 
+Give data
+
+5. each row includes sensor data (10 seconds * 100Hz) + ID + Time + H + R + S + D. 
+And H, R, S and D are
+heartrate, respiratory rate, systolic and diastolic blood pressure.
+
+6. Write python code to build the relationship model between the sensor data
+and the parameters (S, D), and predict S and D from future sensor data.
+
+7. There are 2 files for data, test data and training data. What is the best way to  achieve a low MAE (less than 3 ideally) for two parameters (S, D) on the test data set. 
+ 1. supervised training, using the train data set (*_train.npy) f
+ 2. deep learning.
+ Explain reason
+
+
+8. Use both aproaches and write python code to build the relationship model between the sensor data and the parameters (S, D) using python, and predict S and D from future sensor data. 
+ The goal is to achieve a low MAE (less than 3 ideally) for two parameters (S, D) on the test data set and show a matching trend comparison plot of labels and prediction results
